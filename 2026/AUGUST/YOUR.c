@@ -14,55 +14,42 @@ main
  
 {
  
+// your code goes here
+ 
 int
  
-T
+t
 ;
  
 cin
- 
 >>
- 
-T
+t
 ;
  
 while
- 
 (
-T
+t
 --
 )
- 
 {
- 
  
 int
  
-N
+n
 ,
- 
-M
+m
 ,
- 
-X
+x
 ;
- 
  
 cin
- 
 >>
- 
-N
- 
+n
 >>
- 
-M
- 
+m
 >>
- 
-X
+x
 ;
- 
  
 int
  
@@ -71,7 +58,7 @@ row
 =
  
 (
-X
+x
  
 -
  
@@ -80,63 +67,31 @@ X
  
 /
  
-M
+m
  
 +
  
 1
 ;
  
+// if(x%m==0){
  
-int
+//     cout<<row<<endl;
  
-fromFront
+// }
  
-=
+// else{
  
-row
-;
+//     cout<<--row<<endl;
  
- 
-int
- 
-fromBack
- 
-=
- 
-N
- 
--
- 
-row
- 
-+
- 
-1
-;
- 
+// }
  
 cout
- 
 <<
- 
-min
-(
-fromFront
-,
- 
-fromBack
-)
- 
+row
 <<
- 
-'\n'
+endl
 ;
  
 }
- 
-return
- 
-0
-;
 }
