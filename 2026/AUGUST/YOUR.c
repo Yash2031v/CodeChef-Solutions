@@ -50,189 +50,105 @@ N
 ;
  
  
-int
- 
-sum
- 
-=
- 
-0
-;
- 
- 
-bool
- 
-hasOdd
- 
-=
- 
-false
-;
- 
- 
-for
- 
-(
-int
- 
-i
- 
-=
- 
-0
-;
- 
-i
- 
-<
- 
-N
-;
- 
-i
-++
-)
- 
-{
- 
+// Strategy 1: Only add 1
  
  
 int
  
-x
-;
- 
- 
- 
-cin
- 
->>
- 
-x
-;
- 
- 
- 
-sum
- 
-+=
- 
-x
-;
- 
- 
- 
-if
- 
-(
-x
- 
-%
- 
-2
- 
-==
- 
-1
-)
- 
- 
- 
- 
-hasOdd
+add1
  
 =
  
-true
-;
- 
- 
-}
- 
- 
-if
- 
 (
-sum
- 
-%
- 
-2
- 
-==
- 
-1
-)
- 
-{
- 
- 
- 
-cout
- 
-<<
- 
-0
- 
-<<
- 
-'\n'
-;
- 
- 
-}
- 
- 
-else
- 
-if
- 
-(
-hasOdd
-)
- 
-{
- 
- 
- 
-cout
- 
-<<
- 
-sum
+3
  
 -
  
-1
+N
  
-<<
+%
  
-'\n'
+3
+)
+ 
+%
+ 
+3
 ;
  
  
-}
+// Strategy 2: Go to next multiple of 5
  
  
-else
+int
  
-{
+next5
  
+=
+ 
+((
+N
+ 
+/
+ 
+5
+)
+ 
++
+ 
+1
+)
+ 
+*
+ 
+5
+;
+ 
+ 
+int
+ 
+jump
+ 
+=
+ 
+1
+ 
++
+ 
+(
+3
+ 
+-
+ 
+next5
+ 
+%
+ 
+3
+)
+ 
+%
+ 
+3
+;
  
  
 cout
  
 <<
  
-sum
+min
+(
+add1
+,
+ 
+jump
+)
  
 <<
  
 '\n'
 ;
- 
- 
-}
  
 }
  
