@@ -18,65 +18,46 @@ main
  
 int
  
-t
+x
 ;
- 
 cin
 >>
-t
+x
 ;
  
-while
+if
 (
-t
---
+x
+<
+9
+ 
+&&
+ 
+x
+>
+5
 )
 {
  
-int
- 
-n
-,
-m
-,
-x
+cout
+<<
+"
+Yes
+"
+<<
+endl
 ;
  
-cin
->>
-n
->>
-m
->>
-x
-;
+}
  
-int
- 
-row
- 
-=
- 
-x
-/
-m
-;
- 
-// if(x%m==0){
- 
-//     cout<<row<<endl;
- 
-// }
- 
-// else{
- 
-//     cout<<--row<<endl;
- 
-// }
+else
+{
  
 cout
 <<
-row
+"
+No
+"
 <<
 endl
 ;
