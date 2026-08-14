@@ -39,6 +39,12 @@ T
 int
  
 N
+,
+ 
+M
+,
+ 
+X
 ;
  
  
@@ -47,89 +53,66 @@ cin
 >>
  
 N
+ 
+>>
+ 
+M
+ 
+>>
+ 
+X
 ;
- 
- 
-// Strategy 1: Only add 1
  
  
 int
  
-add1
+row
  
 =
  
 (
-3
+X
  
 -
  
-N
- 
-%
- 
-3
+1
 )
- 
-%
- 
-3
-;
- 
- 
-// Strategy 2: Go to next multiple of 5
- 
- 
-int
- 
-next5
- 
-=
- 
-((
-N
  
 /
  
-5
-)
+M
  
 +
  
 1
-)
- 
-*
- 
-5
 ;
  
  
 int
  
-jump
+fromFront
  
 =
  
-1
+row
+;
  
-+
  
-(
-3
+int
+ 
+fromBack
+ 
+=
+ 
+N
  
 -
  
-next5
+row
  
-%
++
  
-3
-)
- 
-%
- 
-3
+1
 ;
  
  
@@ -139,10 +122,10 @@ cout
  
 min
 (
-add1
+fromFront
 ,
  
-jump
+fromBack
 )
  
 <<
