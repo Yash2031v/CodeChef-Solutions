@@ -18,8 +18,26 @@ main
  
 int
  
+t
+;
+ 
+cin
+>>
+t
+;
+ 
+while
+(
+t
+--
+)
+{
+ 
+int
+ 
 x
 ;
+ 
 cin
 >>
 x
@@ -29,14 +47,21 @@ if
 (
 x
 <
-9
- 
-&&
- 
-x
->
-5
+30
 )
+{
+ 
+cout
+<<
+"
+No
+"
+<<
+endl
+;
+ 
+}
+else
 {
  
 cout
@@ -49,18 +74,6 @@ endl
 ;
  
 }
- 
-else
-{
- 
-cout
-<<
-"
-No
-"
-<<
-endl
-;
  
 }
 }
