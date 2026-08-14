@@ -36,32 +36,30 @@ t
 int
  
 x
+,
+y
 ;
  
 cin
 >>
-X
+x
+>>
+y
 ;
  
 if
 (
 x
->
-67
- 
-&&
- 
-x
+-
+y
 <
-45000
+0
 )
 {
  
 cout
 <<
-"
-Yes
-"
+0
 <<
 endl
 ;
@@ -73,9 +71,9 @@ else
  
 cout
 <<
-"
-No
-"
+x
+-
+y
 <<
 endl
 ;
