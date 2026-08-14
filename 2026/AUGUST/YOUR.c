@@ -46,28 +46,35 @@ x
 if
 (
 x
-<
-30
+>=
+67
+ 
+&&
+ 
+x
+<=
+45000
 )
 {
  
 cout
 <<
 "
-No
+Yes
 "
 <<
 endl
 ;
  
 }
+ 
 else
 {
  
 cout
 <<
 "
-Yes
+No
 "
 <<
 endl
